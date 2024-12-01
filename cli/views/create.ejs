@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include("settings"); %>
+</head>
+
+<body>
+    <% if(error !== undefined) { %>
+        <script>
+            const alert = bootstrap.Alert.getOrCreateInstance('#alertExample')
+            alert.close()
+        </script>
+        <div class="alert alert-danger mb-0 alert-dismissible alert-absolute fade show" id="alertExample" role="alert" data-mdb-color="secondary">
+            <i class="fas fa-exclamation-triangle"></i> — 
+            <%= error %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" data-bs-target="#my-alert" aria-label="Close"></button>
+        </div>
+        <% } %>
+        
+    <main>
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="header">
+                    <div class="container-footer-line">
+                        <i class="footer-line"></i>
+                    </div>
+                    <h2>CREATE POST</h2>
+                    <div class="container-footer-line">
+                        <i class="footer-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap-login100 p-t-50 p-b-90 login-form row justify-content-center">
+            <form class="login100-form validate-form flex-sb flex-w col-md-6 col-lg-4" action="/post" method="POST">
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Title is required">
+                    <input class="input100" type="text" name="title" placeholder="Title">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Description is required">
+                    <input class="input100" type="text" name="description" placeholder="Description">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="container-login100-form-btn m-t-17">
+                    <button class="login100-form-btn">POST</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

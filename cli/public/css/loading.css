@@ -1,0 +1,27 @@
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-color: var(--color-one);
+  z-index: 99;
+}
+
+#loading-image {
+  z-index: 100;
+  animation: anim 4s infinite;
+}
+
+@keyframes anim {
+  0%,100% {
+    transform: rotate(370deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}

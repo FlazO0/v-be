@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&family=Ubuntu:wght@300&display=swap');
+
+.navbar-brand {
+    color: #8e44ad !important;
+    font-weight: bolder;
+    font-family: "Montserrat";
+    font-size: 100px;
+}
+
+.nav-link {
+    color: #0f0b11 !important;
+    font-family: 'Montserrat';
+    font-size: 55px;
+}
+
+.uulrro {
+    color: #926aa3 !important;
+    font-weight: bolder;
+    font-family: 'Montserrat';
+    font-size: 60px;
+}
+
+.navbar-toggler {
+    color: var(--color-two) !important;
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+            
+.sidebar {
+    font-family: 'Ubuntu';
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #080808;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+    
+.sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    transition: 0.3s;
+    color: #e7e0e0;
+    font-family: 'Ubuntu';
+}
+    
+.sidebar a:hover {
+    color: #e7e7e7;
+}
+    
+.sidebar .closebtn {
+    color: #ffffff !important;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}

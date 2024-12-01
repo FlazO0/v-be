@@ -1,0 +1,12 @@
+:root {
+  --color-one: #000000;
+  --color-two: #b18fd9;
+  --color-three: rgb(235, 235, 235);
+}
+
+@font-face {
+    font-family: Pompiere;
+    src: url(../fonts/Pompiere.ttf);
+}
+
+body {}
